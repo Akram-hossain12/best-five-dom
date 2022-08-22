@@ -6,6 +6,9 @@ function getAllPlayerById (calculatPer){
     // console.log(allPlayerCost)
  return getAllCostNumber;
 }
+function playerCommon (){
+
+}
 
 document.getElementById('player-calculat').addEventListener('click', function(){
  const getInputForPlayer =  getAllPlayerById ("player-input-field");
@@ -32,7 +35,6 @@ document.getElementById('maneger-calculat').addEventListener('click', function()
   getTotleExpenseField.innerText = cochManegerCost;
 
 
- 
  })
 
 

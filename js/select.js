@@ -17,11 +17,11 @@ function display(showElement){
        <li style = " color: white; list-style:none; font-size:24px;">${i+1} .${player} </li>
        `;
       olBody.appendChild(ol)
-     if (i !== 5 ){
-        
+     if (i !==  5 ){
+       
       }
       else{
-      
+         
          alert("you alredy selected 5")
       }
     
