@@ -1,0 +1,16 @@
+body{
+    background-color: #151515;
+}
+.header-text h1{
+    font-family: 'Finlandica', sans-serif;
+font-family: 'Ibarra Real Nova', serif;
+font-family: 'Lobster Two', cursive;
+font-family: 'Old Standard TT', serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Oxygen', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Shadows Into Light', cursive;
+font-size: 76px;
+font-weight: 600;
+margin-top: 9rem;
+}
