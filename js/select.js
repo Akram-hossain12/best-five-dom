@@ -6,7 +6,7 @@ function display(showElement){
   
     olBody.innerHTML="";
      
-   for(let i = 0; i<showElement.length ; i++ ){
+   for(let i = 0; i < showElement.length ; i++ ){
 
     //    console.log(bestFive[i].PlayersName);
        const player = bestFive[i].PlayersName;
@@ -17,6 +17,13 @@ function display(showElement){
        <li style = " color: white; list-style:none; font-size:24px;">${i+1} .${player} </li>
        `;
       olBody.appendChild(ol)
+     if (i !== 5 ){
+        
+      }
+      else{
+      
+         alert("you alredy selected 5")
+      }
     
    }
   
@@ -30,7 +37,6 @@ function getAllButtonClicked (elementId){
     PlayersName : PlayersName
    };
   bestFive.push(PlayersObj);
-
 
    display(bestFive); 
 
