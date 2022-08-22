@@ -39,7 +39,7 @@
                                    <div class="card-body text-center"  style="color: white;">
                                      <h5 class="card-title">Neymar Jr</h5>
                                      <p class="card-text"><span>36 Goals</span> .<span>120 Assist</span></p>
-                                     <a href="#" class="btn btn-primary" style="width: 221px; height: 42px;">Select</a>
+                                     <a href="#" class="btn btn-primary" style="width: 221px; height: 42px;" onclick="getAllButtonClicked (this)">Select</a>
                                    </div>
                                  </div>
 
@@ -51,7 +51,7 @@
                                    <div class="card-body text-center"  style="color: white;">
                                      <h5 class="card-title">Leonal Messi</h5>
                                      <p class="card-text"><span>60 Goals</span> .<span>120 Assist</span></p>
-                                     <a href="#" class="btn btn-primary" style="width: 221px; height: 42px;">Select</a>
+                                     <a href="#" onclick="getAllButtonClicked (this)" class="btn btn-primary" style="width: 221px; height: 42px;">Select</a>
                                    </div>
                                  </div>
 
@@ -63,7 +63,7 @@
                                    <div class="card-body text-center"  style="color: white;">
                                      <h5 class="card-title">Mesut- Ozil</h5>
                                      <p class="card-text"><span>36 Goals</span> .<span>120 Assist</span></p>
-                                     <a href="#" class="btn btn-primary" style="width: 221px; height: 42px;">Select</a>
+                                     <a href="#" onclick="getAllButtonClicked (this)" class="btn btn-primary" style="width: 221px; height: 42px;">Select</a>
                                    </div>
                                  </div>
 
@@ -76,7 +76,7 @@
                                    <div class="card-body text-center"  style="color: white;">
                                      <h5 class="card-title">Cristiano-Ronaldo</h5>
                                      <p class="card-text"><span>36 Goals</span> .<span>120 Assist</span></p>
-                                     <a href="#" class="btn btn-primary" style="width: 221px; height: 42px;">Select</a>
+                                     <a href="#" onclick="getAllButtonClicked (this)" class="btn btn-primary" style="width: 221px; height: 42px;">Select</a>
                                    </div>
                                  </div>
                                  
@@ -89,7 +89,7 @@
                                    <div class="card-body text-center"  style="color: white;">
                                      <h5 class="card-title">David-Backhem</h5>
                                      <p class="card-text"><span>36 Goals</span> .<span>120 Assist</span></p>
-                                     <a href="#" class="btn btn-primary" style="width: 221px; height: 42px;">Select</a>
+                                     <a href="#" onclick="getAllButtonClicked (this)" class="btn btn-primary" style="width: 221px; height: 42px;">Select</a>
                                    </div>
                                  </div>
                                  
@@ -102,7 +102,7 @@
                                    <div class="card-body text-center"  style="color: white;">
                                      <h5 class="card-title">Sarjio ramos</h5>
                                      <p class="card-text"><span>36 Goals</span> .<span>120 Assist</span></p>
-                                     <a href="#" class="btn btn-primary" style="width: 221px; height: 42px;">Select</a>
+                                     <a href="#" onclick="getAllButtonClicked (this)" class="btn btn-primary" style="width: 221px; height: 42px;">Select</a>
                                    </div>
                                  </div>
                                  
@@ -115,7 +115,7 @@
                                    <div class="card-body text-center"  style="color: white;">
                                      <h5 class="card-title">Kaylin-Mbappe</h5>
                                      <p class="card-text"><span>36 Goals</span> .<span>120 Assist</span></p>
-                                     <a href="#" class="btn btn-primary" style="width: 221px; height: 42px;">Select</a>
+                                     <a href="#" onclick="getAllButtonClicked (this)" class="btn btn-primary" style="width: 221px; height: 42px;">Select</a>
                                    </div>
                                  </div>
                                  
@@ -128,7 +128,7 @@
                                    <div class="card-body text-center"  style="color: white;">
                                      <h5 class="card-title">Poul Pogba</h5>
                                      <p class="card-text"><span>36 Goals</span> .<span>120 Assist</span></p>
-                                     <a href="#" class="btn btn-primary" style="width: 221px; height: 42px;">Select</a>
+                                     <a href="#" onclick="getAllButtonClicked (this)" class="btn btn-primary" style="width: 221px; height: 42px;">Select</a>
                                    </div>
                                  </div>
                                  
@@ -141,7 +141,7 @@
                                    <div class="card-body text-center"  style="color: white;">
                                      <h5 class="card-title">Muhammad Salha</h5>
                                      <p class="card-text"><span>36 Goals</span> .<span>120 Assist</span></p>
-                                     <a href="#" class="btn btn-primary" style="width: 221px; height: 42px;">Select</a>
+                                     <a href="#" onclick="getAllButtonClicked(this)" class="btn btn-primary" style="width: 221px; height: 42px;">Select</a>
                                    </div>
                                  </div>
                                  
@@ -151,15 +151,11 @@
                       </div>
                       <div class="col-lg-4 ">
                        <div class="card" style="width: 18rem; height: 430px; background-color: black;">
-                           <div class="card-body">
-                             <h5 class="card-title text-center " style="color : white;">Selected -V</h5>
-                            <ul style="list-style: none ; color: white; margin-top: 5rem;">
-                               <li></li>
-                               <li></li>
-                               <li></li>
-                               <li></li>
-                               <li></li>
-                            </ul>
+                           <div  class="card-body">
+                             <h5  class="card-title text-center " style="color : white;">Selected -V</h5>
+                             <div id="best-selected-player">
+                              
+                             </div>
                            </div>
                          </div>
 
@@ -202,6 +198,8 @@
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script src="js/select.js"></script>
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
