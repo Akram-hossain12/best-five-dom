@@ -3,6 +3,8 @@ const bestFive = [];
 function display(showElement){
 
     let olBody = document.getElementById('best-selected-player');
+  
+    olBody.innerHTML="";
      
    for(let i = 0; i<showElement.length ; i++ ){
 
@@ -11,11 +13,11 @@ function display(showElement){
        
        const ol = document.createElement('ol');
 
-       ol.innerHTML= `
-       <li> ${player} </li>
+    ol.innerHTML= `
+       <li style = " color: white; list-style:none; font-size:24px;">${i+1} .${player} </li>
        `;
-      ol.appendChild(olBody);
-     
+      olBody.appendChild(ol)
+    
    }
   
 }
